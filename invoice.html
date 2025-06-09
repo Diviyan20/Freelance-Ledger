@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Invoice</title>
+        <link rel="stylesheet" href="invoice.css">
+    </head>
+
+    <body>
+        <div class="invoice" id = "invoice">
+            <header class="invoice-header">
+                <h1>INVOICE</h1>
+                <p id="invoice-number">Invoice #: 0001</p>
+                <p id="invoice-date">Date: 2025-06-04</p>
+            </header>
+
+            <section class="invoice-section">
+                <div class="form-to">
+                    <div>
+                        <h3>Form To :</h3>
+                        <p id="from-name">Your Name</p>
+                        <p id="from-address">Your Address</p>
+                        <p id="from-email">Your Email</p>
+                    </div>
+                    <div>
+                        <h3>Client Name: </h3>
+                        <p id="to-name">Client Name :</p>
+                        <p id="to-address">Client Address</p>
+                        <p id="to-email">Client Email</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="invoice-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Qty</th>
+                            <th>Rate</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoice-items">
+                        <tr>
+                            <td>Design Work</td>
+                            <td>2</td>
+                            <td>MYR 100.00</td>
+                            <td>MYR 200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="invoice-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">RM200.0</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span id="tax">RM200.0</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="total">RM200.0</span>
+                </div>
+            </section>
+
+            <footer class="invoice-footer">
+                <p id="notes">Thank you for your business!</p>
+            </footer>
+        </div>
+    </body>
+</html>

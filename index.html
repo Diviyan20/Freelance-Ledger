@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="uTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Freelance Invoice Generator</title>
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="summary.css">
+        
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <div class="container">
+          <img src="freelancer.png" alt="Logo">
+          <div class="header-title">FREELANCE LEDGER</div>
+
+          <h1>Invoice Generator</h1>
+
+            <!-- Your Information-->
+
+            <div class="flex-row">
+              <div class="info-block">
+                <h2>Your Information</h2>
+              <label>Name</label><input type="text" id="your-name">
+              <label>Email</label><input type="email" id="your-email">
+              <label>Phone Number</label><input type="text" id="your-phone">
+              <label>Address Line 1</label><input type="text" id="your-address-line1">
+              <label>Address Line 2</label><input type="text" id="your-address-line2">
+              <label>City</label><input type="text" id="your-city">
+              <label>State</label><input type="text" id="your-state">
+              </div>
+            
+
+
+            <!-- Client Information-->
+
+            <div class="info-block">
+            <h2>Client Information</h2>
+            <label>Name</label><input type="text" id="client-name">
+            <label>Email</label><input type="email" id="client-email">
+            <label>Phone Number</label><input type="text" id="client-phone">
+            <label>Address Line 1</label><input type="text" id="client-address-line1">
+            <label>Address Line 2</label><input type="text" id="client-address-line2">
+            <label>City</label><input type="text" id="client-city">
+            <label>State</label><input type="text" id="client-state">
+          </div>
+        </div>
+
+            <!-- Invoice Details -->
+
+            <div class="invoice-details">
+              <h2>Invoice Details</h2>
+              <div class="invoice-meta">
+                <input type="text" id="project-name" placeholder="Project Name">
+                    <input type="text" id="invoice-number" readonly>
+                    <input type="date" id="invoice-date">
+              </div>
+              
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Qty</th>
+                    <th>Rate</th>
+                    <th class="amount-cell">Amount</th>
+                  </tr>
+                </thead>
+                <tbody id="item-rows"></tbody>
+              </table>
+
+                <button id="add-item">Add Item</button>
+                <label for="tax-rate-input">Tax Rate (%): </label>
+                <input type="number" id="tax-rate-input" value="5" min="0" step="0.01">
+
+                <div class="totals">
+                  <p> Tax: (<span id="tax-rate-display">5</span>%): <span id="tax">RM0.00</span></p>
+                  <p class="total">Total: <span id="total">RM0.00</span></p>
+                </div>
+
+                <h2>Additional Notes</h2>
+                <textarea placeholder="Any extra details...."></textarea>
+                <button id="pdf-button">Generate PDF</button>
+            </div>
+
+        <!-- This is your final printable invoice layout -->
+
+        <div id="invoice-summary" class="invoice-summary" style="display: none;">
+  <div class="header">
+    <h1>Invoice</h1>
+    <p id="summary-invoice-number"></p>
+    <p id="summary-invoice-date"></p>
+    <p id="summary-project-name"></p>
+  </div>
+
+  <div class="parties">
+    <div>
+      <h3>From:</h3>
+      <p id="summary-your-name"></p>
+      <p id="summary-your-phone"></p>
+      <p id="summary-your-email"></p>
+      <p id="summary-your-address-line1"></p>
+      <p id="summary-your-address-line2"></p>
+      <p><span id="summary-your-city"></span>, <span id="summary-your-state"></span></p>
+    </div>
+
+    <div>
+      <h3>Client:</h3>
+      <p id="summary-client-name"></p>
+      <p id="summary-client-phone"></p>
+      <p id="summary-client-email"></p>
+      <p id="summary-client-address-line1"></p>
+      <p id="summary-client-address-line2"></p>
+      <p><span id="summary-client-city"></span>, <span id="summary-client-state"></span></p>
+    </div>
+  </div>
+
+  <table class="summary-table">
+    <thead>
+      <tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr>
+    </thead>
+    <tbody id="summary-line-items">
+      <!-- Filled dynamically -->
+    </tbody>
+  </table>
+
+  <div class="totals">
+    <p>Tax (<span id="summary-tax-rate">5</span>%): <span id="summary-tax"></span></p>
+    <p class="summary-total">Total: <span id="summary-total"></span></p>
+  </div>
+
+  <div class="notes">
+    <h3>Notes:</h3>
+    <p id="summary-notes"></p>
+  </div>
+</div>
+
+<div class="loading-overlay" id="loading-overlay">
+  <div class="loading-content">
+    <h1 id="loading-text">Generating PDF.....</h1>
+    <h3 id="subheading-text" style="display:none; font-size: 1.1rem; color: #ccc;"></h3>
+    <p id="motivation-text" style="display:none; font-size: 0.95rem; color: #bbb; font-style: italic;"></p>
+  </div>
+</div>
+    </body>
+</html>

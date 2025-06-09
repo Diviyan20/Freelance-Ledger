@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: 	#1171ba;
+    color: #333;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container img{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 300px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input[type="date"] {
+    padding: 0.6rem;
+}
+
+.invoice-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.invoice-meta input {
+    flex: 1;
+    min-width: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.amount-cell {
+    text-align: right;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#add-item {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+#add-item:hover {
+    background-color: #ddd;
+}
+
+#invoice-number{
+    color:#333;
+}
+
+#total{
+    font-weight: bold;
+}
+
+#summary-total{
+    font-weight: bold;
+}
+
+#tax-rate-input{
+    max-width: 130px;
+}
+
+.totals {
+    text-align: right;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.total{
+    font-weight: bold;
+}
+
+.summary-total{
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.parties p {
+  margin: 2px 0;
+}
+.parties h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .invoice-meta {
+        flex-direction: column;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+}
