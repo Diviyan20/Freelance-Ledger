@@ -25,3 +25,31 @@ This project is a solution to these problems by offering a lightweight, interact
 | jsPDF  | Generate and export PDF  |
 | html2canvas  | Convert HTML to image for jsPDF |
 
+
+## Project Features
+Various different features have been implemented into this project to make it responsive and dynamic. Some of them include:
+* Add and remove line items dynamically.
+* Real-time Tax and Amount calculations.
+* Input for Sender and Client Information
+* Custom Tax Input
+* Project Name, Invoice Number, Invoice Date and Notes Support
+* Generate clean PDF invoices with 1 click
+* Clean and Modern UI
+
+## How to use this Invoice Generator
+1. Enter your name, email, address, phone number, city and state
+2. Enter client's name, email, address, phone number, city and state
+3. Input the name of the project
+4. Input the services the clients require
+5. Enter the amount of tax you want to charge
+6. Add any additional information (if any) in the additional notes section.
+7. Click 'Generate PDF'
+8. The file is instantly generated and is saved on your device!
+9. Scroll down to view the preview
+
+## Author
+### Diviyan Rajan
+Front-End Developer passionate about making tools that improve productivity and UX.
+* LinkedIn
+* Github Profile
+
