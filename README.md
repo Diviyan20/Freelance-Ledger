@@ -6,15 +6,15 @@
 
 ## Problem Statement
 Freelancers tend to create their invoices manually using spreadsheets or even third-party software or applications. These methods tend to be slow, prone to errors, or are also not free. Many existing tools:
-•	Lack in customization.
-•	Do not give real-time feedback or previews.
-•	Some third-party software or applications tend to have watermarks when downloading as a PDF.
+* Lack in customization.
+* Do not give real-time feedback or previews.
+*	Some third-party software or applications tend to have watermarks when downloading as a PDF.
 
 This project is a solution to these problems by offering a lightweight, interactive, and fully client-side invoice generator which:
-•	Calculating tax and total amount automatically
-•	Provides a styled preview of the invoice.
-•	Allows downloading the invoice as a high-quality PDF.
-•	Requires no sign-up or server — just open the webpage and use it.
+*	Calculating tax and total amount automatically
+*	Provides a styled preview of the invoice.
+*	Allows downloading the invoice as a high-quality PDF.
+*	Requires no sign-up or server — just open the webpage and use it.
 
 ## Project Tech Stack
 | Technology  | Purpose |
