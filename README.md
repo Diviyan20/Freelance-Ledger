@@ -53,6 +53,5 @@ https://github.com/user-attachments/assets/f39e0ba4-319d-41cc-8610-227881f113ff
 ## Author
 ### Diviyan Rajan
 Front-End Developer passionate about making tools that improve productivity and UX.
-* [LinkedIn](www.linkedin.com/in/diviyan-rajan)
 * [Github Profile](https://github.com/Diviyan20)
 
