@@ -50,6 +50,9 @@ Various different features have been implemented into this project to make it re
 ## Project Demo Video
 https://github.com/user-attachments/assets/f39e0ba4-319d-41cc-8610-227881f113ff
 
+## Try it out Yourself!
+Visit this link: https://freelance-ledger.vercel.app/
+
 ## Author
 ### Diviyan Rajan
 Front-End Developer passionate about making tools that improve productivity and UX.
