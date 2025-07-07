@@ -193,16 +193,38 @@ textarea {
   margin-top: 10px;
 }
 
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.2rem, 3vw, 1.75rem);
+}
+
+input, textarea {
+  max-width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+
 @media (max-width: 768px) {
     .flex-row {
         flex-direction: column;
     }
 
-    .invoice-meta {
-        flex-direction: column;
+    .invoice-meta input {
+        min-width: 100%;
     }
 
     th, td {
         font-size: 0.9rem;
     }
+    .info-block {
+    min-width: 100%;
+  }
 }
