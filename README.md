@@ -15,6 +15,7 @@ This project is a solution to these problems by offering a lightweight, interact
 *	Provides a styled preview of the invoice.
 *	Allows downloading the invoice as a high-quality PDF.
 *	Requires no sign-up or server — just open the webpage and use it.
+*	Supported for Mobile Devices
 
 ## Project Tech Stack
 | Technology  | Purpose |
@@ -34,7 +35,8 @@ Various different features have been implemented into this project to make it re
 * Custom Tax Input
 * Project Name, Invoice Number, Invoice Date and Notes Support
 * Generate clean PDF invoices with 1 click
-* Clean and Modern UI
+* Clean, Modern and Responsive UI
+* UI is supported for Mobile Devices
 
 ## How to use this Invoice Generator
 1. Enter your name, email, address, phone number, city and state
